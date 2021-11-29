@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Bootstrap CSS -->
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="./style.css" />
+ <link rel="stylesheet" href="../fontawesome-free-6.0.0-beta3-web/fontawesome-free-6.0.0-beta3-web/css/all.css" />
+  <head>
+    <title></title>
+  </head>
+
+  <body class="bg-secondary text-white">
+    <!-- Código começa aqui -->
+
+    <!-- aqui começa a NavBar -->
+    <div class="container-fluid">
+      <div class="row bg-dark position-absolute ">
+        <div class="col">
+        
+          <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">
+            <img style="width: 30px" src="./img/estrela.png" alt="" />
+            DevFan
+          </a>
+    
+          <!-- Toggler/collapsibe Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#curia">Curiosiadades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#maratonar">Maratonar</a>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link" href="#sinopse">Sinopses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contato">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#agr">Fim</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+        </div>
+      </div>
+    <!--  NavBar termina aqui -->
+
+    <!-- Carousel inicio -->
+    <div id="demo" class="carousel slide text-center" data-ride="carousel">
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/star.jpg" alt="Los Angeles" id="carousel-img" />
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Star VS. As Forças Do Mal</h3>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="./img/gravity.png" alt="Chicago" id="carousel-img" />
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Gravity Falls</h3>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="./img/steven.jpg" alt="New York" id="carousel-img" />
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Steven Universo</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls Carousel -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+    <!-- Left and right controls Carousel Termina aqui -->
+
+    <!-- Carousel Termina AQ -->
+
+    <!-- About inicio -->
+    <div class="container-fluid pt-5 pb-5 bg-dark" id="about">
+      <div class="row">
+        <div class="col-12 text-center">
+          <p class="display-4">About Me</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <p>
+            Eu sou a Bianca, tenho 23 anos, sou formada em Pedagogia e
+            especialista em Educação Infantil.<br />
+            O quê eu tô fazendo por aqui? Hahaha... <br />
+            Comecei a estudar programação faz uns 9 meses, com incentivo do meu
+            marido. <br />
+            Estou no primeiro semestre de Análise e Desenvolvimento de Sistemas
+            - Mackenzie. <br />
+            Adoro desenhos! Por isso esse projeto... Partiu! 🚀
+          </p>
+        </div>
+      </div>
+
+      <div class="col-12 text-center" >
+        <!-- MODAL começa aqui -->
+        <!-- Button to Open the Modal -->
+        <button
+          type="button"
+          class="btn btn-lg btn-secondary"
+          data-toggle="modal"
+          data-target="#myModal"
+          id="curia"
+        >
+          Curiosidade
+        </button>
+
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title text-dark">Curiosidade</h4>
+                <button type="button" class="close" data-dismiss="modal">
+                  &times;
+                </button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body text-dark">
+                <p>Esses são meus desenhos favoritos!</p>
+                <p>Clicando nos Cards você poderá assistir alguns episódios.</p>
+              </div>
+
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-dismiss="modal"
+                >
+                  Ok!
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- modal termina aqui -->
+      </div>
+    </div>
+    <!-- About fim -->
+
+    <!-- CARD começo-->
+    <div class="container text-center mb-4 mt-4 bg-secondary" id="maratonar">
+      <p class="display-4 p-3">Maratonar</p>
+      <div class="row">
+        <div class="col">
+          <div class="card-deck">
+          <div class="card bg-dark">
+            <a
+              class="text-light"
+              href="https://www.youtube.com/playlist?list=PLHtiBDWLRlWua8lgUKFOZ1IX74rDFBNLh"
+              target="blank"
+            >
+              <img class="card-img-top img-fluid" src="./img/cardGra.jpg" />
+              <div class="card-body">
+                <h4 class="card-title">Gravity Falls</h4>
+              </div>
+            </a>
+          </div>
+        
+        
+          <div class="card bg-dark">
+            <a
+              class="text-light"
+              href="https://www.youtube.com/playlist?list=PLzdyuQwg-sx2hOp3EPOqAuiIh39ZSvFXf"
+              target="blank"
+            >
+              <img class="card-img-top img-fluid" src="./img/cardStar.png" />
+              <div class="card-body">
+                <h4 class="card-title">Star VS. As Forças Do Mal</h4>
+              </div>
+            </a>
+          </div>
+        
+          <div class="card bg-dark">
+            <a
+              class="text-light"
+              href="https://www.youtube.com/watch?v=ENjfkDrZ_b4"
+              target="blank"
+            >
+              <img class="card-img-top img-fluid" src="./img/cardSt.jpg" />
+              <div class="card-body">
+                <h4 class="card-title">Steven Universo</h4>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!-- CARD fim -->
+
+    <!-- Collapse inicio -->
+    <div class="container-fluid bg-dark text-center mb-4 mt-4">
+      <div class="row">
+        <div class="col">
+          <div class="pl-5 pr-5 pb-5 pt-5 ">
+            <p class="display-4 " id="sinopse">
+              Sinopses
+            </p>
+              <div id="accordion">
+                <div class="card bg-dark ">
+                  <div class="card-header bg-secondary" id="headingOne">
+                      <h3 display-4 class="mb-0 ">
+                        <button
+                          class="btn btn-link text-light"
+                          data-toggle="collapse"
+                          data-target="#collapseOne"
+                          aria-expanded="true"
+                          aria-controls="collapseOne"
+                        >
+                        Star VS. As Forças Do Mal
+                        </button>
+                      </h3>
+                  </div>
+
+                    <div
+                      id="collapseOne"
+                      class="collapse show"
+                      aria-labelledby="headingOne"
+                      data-parent="#accordion">
+                      
+                        <div class="card-body text-justify">
+                          A divertida princesa adolescente mágica, Star Butterfly, que - depois de alguns escaramuças ousadas com monstros de outro mundo - é enviada por seus pais reais para viver com a família Diaz na Terra, trazendo seu próprio estilo interdimensional único para seu novo planeta. Com o filho adolescente de Diaz, Marco, ao seu lado, esta estudante de intercâmbio de outra dimensão embarca em novas aventuras lutando contra vilões malignos em todo o multiverso e no ensino médio, tudo em um esforço para proteger sua poderosa varinha mágica, que ela ainda está descobrindo como usar.
+                      </div>
+                    </div>
+                    <div class="card bg-dark ">
+                      <div class="card-header bg-secondary" id="headingTwo">
+                        <h3 class="mb-0">
+                          <button
+                            class="btn btn-link collapsed text-light"
+                            data-toggle="collapse"
+                            data-target="#collapseTwo"
+                            aria-expanded="false"
+                            aria-controls="collapseTwo"
+                          >
+                            Steven Universo
+                          </button>
+                        </h3>
+                      </div>
+                      <div
+                        id="collapseTwo"
+                        class="collapse"
+                        aria-labelledby="headingTwo"
+                        data-parent="#accordion"
+                      >
+                      <div class="card-body text-justify">
+                        Steven é o famoso irmão mais novo de uma equipe mágica de guardiãs da humanidade, as CRYSTAL GEMS! Embora ele não seja tão poderoso quanto Garnet, Ametista e Pérola, 
+                        Steven sempre as acompanha em suas aventuras mágicas e encontra suas próprias formas de salvar o dia.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card bg-dark ">
+                    <div class="card-header bg-secondary" id="headingThree">
+                      <h3 class="mb-0 ">
+                        <button
+                          class="btn btn-link collapsed text-light"
+                          data-toggle="collapse"
+                          data-target="#collapseThree"
+                          aria-expanded="false"
+                          aria-controls="collapseThree"
+                        >
+                        Gravity Falls
+                        </button>
+                      </h3>
+                    </div>
+                    <div
+                      id="collapseThree"
+                      class="collapse"
+                      aria-labelledby="headingThree"
+                      data-parent="#accordion"
+                    >
+                      <div class="card-body text-justify">
+                        A trama conta a história dos gêmeos Dipper e Mabel, que foram recentemente enviados para a misteriosa cidade de Gravity Falls para morar com seu peculiar tio-avô Stan. O que parece que vai ser um verão enfadonho para os
+                        garotos acaba se tornando mais interessante quando esses gêmeos percebem que há algo estranho acontecendo em Gravity Falls.
+                      </div>
+                    </div>
+                </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Collapse fim -->
+
+    <!-- Dois do que eu escolher aqui-->
+    <div class="container ">
+      <div class="row mb-4 mt-4">
+        <div class="col">
+          <div class="card-deck">
+            <!-- Card com Form inicio -->
+            <div class="card bg-dark flex-fill mb-3" id="contato">
+              <div class="card-body">
+                <p class="card-text text-center">
+                  <form>
+                    <div class="col">
+                      <p  class="display-4">Contato:</p>
+                        Nome:<input
+                            type="text"
+                            name="nome"
+                            class="form-control"
+                            id="nome"
+                          />
+                    </div>
+                      
+                    <div class="col ">
+                          Email:<input
+                            type="text"
+                            name="email"
+                            class="form-control"
+                            id="email"
+                          />
+                    </div>
+              
+                    <div class="col">
+                          Telefone:<input type="text" name="tel" class="form-control" id="tel" />
+                    </div>
+                      
+              
+                    <div class="col ">
+                          Mensagem:<input
+                            type="text"
+                            name="msg"
+                            class="form-control"
+                            id="msg"
+                          />
+                    </div>
+                    <div class=" col  bg-dark text-right p-3">
+                          <button type="button" class="btn-lg btn-success">Enviar!</button>
+                    </div>
+                  </form>
+                </p>
+              </div>
+            </div>
+            <!-- Card com Form fim -->
+            <!-- Card com Modal inicio -->
+            <div class="card bg-dark flex-fill mb-3" id="agr">
+              <img class="card-img-top img-fluid"  src="../img/clap.gif" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text text-center">
+                                <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-secondary text-light btn-lg " data-toggle="modal" data-target="#exampleModal">
+                          Chegou até aqui?!
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content text-center text-dark">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Agradecimentos</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body text-center text-dark">
+                                <p> Agradeço aos meus professores: seu apoio, orientação e idéias fizeram desta uma experiência inspiradora para mim. </p>
+                              
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar!</button>
+                                <button type="button" class="btn btn-success">Não há de quê!</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </p>
+                    <!-- modal termina aqui -->
+              </div>
+            </div>
+            <!-- Card com Modal fim -->
+          </div>
+        </div>
+      </div>
+    </div>
+        <!-- Dois do que eu escolhi termina aqui-->
+
+
+        <!-- Footer começa aqui -->
+        <!--LIST GROUP inicio -->
+    <footer class="bg-dark text-light text-center pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 text-left">
+            Links mais acessados
+            <ul class="list-group list-group-flush">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-dark">
+                  <a class="text-light" href="#maratonar">Maratonar</a>
+                </li>
+                <li class="list-group-item bg-dark">
+                  <a class="text-light"href="https://www.instagram.com/bi_wtf/">Instagram </a></li>
+
+                <li class="list-group-item bg-dark">
+                  <a class="text-light"href="https://github.com/BiancaDuarteRaposo"> GitHub</a></li>
+                
+                <li class="list-group-item bg-dark">
+                  <a class="text-light"  href="#contato">Contato</a>
+                </li>
+               
+            </ul>
+          </div>
+          <div class="col-6 text-left">
+            Redes Sociais
+            <ul class="list-group list-group-flush">
+              </i>
+              <li class="list-group-item bg-dark"> 
+                <a class="text-light"href="https://web.facebook.com/bianca.duarte.9026/" >
+                <i class="fa-brands fa-facebook"></i> Facebook </a> </li>
+              <li class="list-group-item bg-dark">
+                <a class="text-light" href="https://www.linkedin.com/in/bianca-raposo/"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+              <li class="list-group-item bg-dark">
+                <a class="text-light" href="https://www.instagram.com/bi_wtf/"><i class="fab fa-instagram-square"></i> Instagram </a></li>
+              <li class="list-group-item bg-dark">
+              <a class="text-light" href="https://github.com/BiancaDuarteRaposo">
+
+                <i class="fab fa-github-square"></i> GitHub</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--LIST GROUP fim -->
+
+    <!-- Footer termina  aqui -->
+
+    <!-- Código Termina aqui -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+  </body>
+</html>

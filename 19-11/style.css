@@ -1,0 +1,23 @@
+.container {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+.vermelho {
+  background-color: red;
+  height: 50px;
+}
+
+.btn-outline-rose {
+  color: #ff69b4;
+  background-color: transparent;
+  background-image: none;
+  border-color: #141213;
+}
+
+.btn-outline-rose:hover {
+  color: #ff69;
+  background-color: #9966cc;
+  background-image: none;
+  border-color: #423f25;
+}
